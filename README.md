@@ -11,10 +11,8 @@ REST APIs:
 * POST - /api/bulkGenerate -- Inputs: array of goal, step -- Response: 202 ACCEPTED { "task: "UUID of the task"}
 * GET - /api/tasks/{UUID of the task}?action=get_numlist -- Response: { "results": [ "10, 8, 6, 4, 2, 0", "100, 97, ...." ] }
 
--- Documentation is done using SWAGGER UI (localhost:8080/swagger-ui.html should point to the SWAGGER UI)
--- Deployed into AWS Fargate (built a Docker image and then pushed to Docker Hub. Post that, I used that image in deploying to AWS Fargate as a container in Amazon ECS)
-
-* a. Public IP on AWS fargate: http://18.191.128.45:8080/ (returns the title of the project)
-* b. http://18.191.128.45:8080/swagger-ui.html (returns Swagger Doc)
-  
-  The above 5 REST API calls can be tested using Swagger UI. 
+* a. Documentation is done using SWAGGER UI (localhost:8080/swagger-ui.html should point to the SWAGGER UI)
+* b. Deployed into AWS Fargate (built a Docker image and then pushed to Docker Hub. Post that, I used that image in deploying to AWS Fargate as a container in Amazon ECS)
+* c. Public IP on AWS fargate: http://18.191.128.45:8080/ (returns the title of the project)
+* d. http://18.191.128.45:8080/swagger-ui.html (returns Swagger Doc)
+* e. The above 5 REST API calls can be tested using Swagger UI. 
